@@ -241,6 +241,9 @@ a.footer-link:focus {
 .linkedin {
   fill: #0073b1;
 }
+.letterbox {
+  fill: #ffffff;
+}
 .twitter {
   fill: #1DA1F2;
 }
@@ -317,3 +320,4 @@ body.darkmode {
   }
 
 }
+
