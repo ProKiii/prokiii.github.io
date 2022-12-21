@@ -32,9 +32,6 @@ html {
 
 img {
   max-width: 100%;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   margin-bottom: 1%;
 }
 
@@ -128,6 +125,12 @@ img {
 
 .mt-3 {
   margin-top: 4rem;
+}
+
+.mt-4 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 400px;
 }
 
 .mx-auto {
@@ -321,3 +324,9 @@ body.darkmode {
 
 }
 
+
+.imgswitch{
+  margin-top: 45px;
+  margin-right: 0px;
+  margin-left: 25px;
+}

@@ -132,34 +132,8 @@
       <div>
 
         <div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h1 class="mt-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
-      <script >
-        if (localStorage.getItem('preferredTheme') == 'dark') {
-          setDarkMode(true)
-        }
-        function setDarkMode(isDark) {
-          var darkBtn = document.getElementById('darkBtn')
-          var lightBtn = document.getElementById('lightBtn')
-          if (isDark) {
-            lightBtn.style.display = "block"
-            darkBtn.style.display = "none"
-            localStorage.setItem('preferredTheme', 'dark');
-          } else {
-            lightBtn.style.display = "none"
-            darkBtn.style.display = "block"
-            localStorage.removeItem('preferredTheme');
-          }
-          document.body.classList.toggle("darkmode");
-        }
-      </script>
-    </h1>
-  </div>
-
   <div class="six columns ml-1">
-    <h1 class="mt-2">
+    <h1 class="mt-4">
       Blog das reviews merdosas do ProKiii
     </h1>
   </div>
@@ -178,6 +152,27 @@
             <a href="mailto:prokiiifo@gmail.com" target="_blank" class="ml">Email</a>
           
         
+            <span style="margin-left:20px" onclick=setDarkMode(true) id="darkBtn">🌑</span>
+            <span style="margin-left:20px" onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</span>
+              <script>
+                if (localStorage.getItem('preferredTheme') == 'dark') {
+                  setDarkMode(true)
+                }
+                function setDarkMode(isDark) {
+                  var darkBtn = document.getElementById('darkBtn')
+                  var lightBtn = document.getElementById('lightBtn')
+                  if (isDark) {
+                    lightBtn.style.display = "inline"
+                    darkBtn.style.display = "none"
+                    localStorage.setItem('preferredTheme', 'dark');
+                  } else {
+                    lightBtn.style.display = "none"
+                    darkBtn.style.display = "inline"
+                    localStorage.removeItem('preferredTheme');
+                  }
+                  document.body.classList.toggle("darkmode");
+                }
+              </script>
       </div>
     </div>
     <hr style="margin-bottom: 2.6rem">
@@ -191,6 +186,7 @@
     <h2 class="mb-2">Hello its me ProKiii o/</h2>
     <p>Uma random pessoa que decidiu utilizar os dotes informáticos para fazer um blog sobre cinema, it&#39;s not good mas ninguém vai ver também.</p>
     <p>Leiam todas as minhas opiniões com um pé atrás, eu não sou profisisonal apenas pensei fazer um blog porque parecia me algo mais pessoal e sempre posso usar como desculpa que foi para desenvolver os meus skills de coder.</p>
+    <p>Recomendo a review do <a onclick="window.location='/2022/08/01/Everything-Everywhere-All-at-Once/'">Everything, Everywhere all at once</a></p>
   </div>
 </div>
 
@@ -200,7 +196,7 @@
 <div class="row">
 
   <div class="three columns left lit">
-    <p class="bottom">21 de dez de 2022</p>
+    <p class="bottom">Dec 21, 2022</p>
   </div>
   <div class="nine columns left mb-3">
     <a href="/2022/12/21/Guillermo-del-Toros-Pinocchio/" >
@@ -214,7 +210,7 @@
 <div class="row">
 
   <div class="three columns left lit">
-    <p class="bottom">21 de dez de 2022</p>
+    <p class="bottom">Dec 21, 2022</p>
   </div>
   <div class="nine columns left mb-3">
     <a href="/2022/12/21/Scorn/" >
@@ -228,7 +224,7 @@
 <div class="row">
 
   <div class="three columns left lit">
-    <p class="bottom">21 de dez de 2022</p>
+    <p class="bottom">Dec 21, 2022</p>
   </div>
   <div class="nine columns left mb-3">
     <a href="/2022/12/21/Call-of-the-night/" >
@@ -242,7 +238,7 @@
 <div class="row">
 
   <div class="three columns left lit">
-    <p class="bottom">19 de dez de 2022</p>
+    <p class="bottom">Dec 19, 2022</p>
   </div>
   <div class="nine columns left mb-3">
     <a href="/2022/12/19/Avatar-The-Way-of-Water/" >
